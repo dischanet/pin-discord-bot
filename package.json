@@ -1,13 +1,13 @@
 {
   "name": "js-discord-bot",
-  "description": "",
+  "description": "Default template for JavaScript bot",
   "version": "0.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dischanet/js-discord-bot.git"
   },
-  "author": "",
+  "author": "Yusuke Hayashi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dischanet/js-discord-bot/issues"
