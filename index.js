@@ -15,4 +15,16 @@ client.on('message', msg => {
   }
 });
 
+client.on('messageReactionAdd', reacta => {
+  if (reacta.emoji.name === 'pushpin') {
+    reacta.message.pin();
+  }
+});
+
+client.on('messageReactionRemove', reactr => {
+  if (reactr.emoji.name === 'pushpin') {
+    reactr.message.unpin();
+  }
+});
+
 client.login(process.env['DISCORD_BOT_TOKEN']);
