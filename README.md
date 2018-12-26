@@ -1,1 +1,1 @@
-# js-discord-bot
+# pin-discord-bot

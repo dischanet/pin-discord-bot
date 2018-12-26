@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo /usr/bin/systemctl start js-discord-bot
+sudo /usr/bin/systemctl start pin-discord-bot

@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/repos/js-discord-bot
+    destination: /home/ec2-user/repos/pin-discord-bot
 hooks:
   ApplicationStop:
     - location: hooks/stop.sh
