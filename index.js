@@ -11,8 +11,8 @@ client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pong');
   }
-  if (msg.content === "pininfo") {
-    msg.reply("ピン留めくん - ピン留めBOT made by Dischanet Team");
+  if (msg.content === 'pininfo') {
+    msg.reply('ピン留めくん - ピン留めBOT made by Dischanet Team');
   }
 });
 
