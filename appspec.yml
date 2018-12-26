@@ -3,22 +3,13 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/repos/js-discord-bot
-permissions:
-  - object: /
-    owner: ec2-user
-    group: ec2-user
-    mode: 777
-    pattern: '**'
 hooks:
   ApplicationStop:
     - location: hooks/stop.sh
       timeout: 300
-      runas: ec2-user
   AfterInstall:
     - location: hooks/install.sh
       timeout: 300
-      runas: ec2-user
   ApplicationStart:
     - location: hooks/start.sh
-      timeout: 3300
-      runas: ec2-user
+      timeout: 3000
