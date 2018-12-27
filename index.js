@@ -31,10 +31,6 @@ client.on('messageReactionRemove', reactr => {
   if (reactr.emoji.name === 'pushpin') {
     if (reacta.message.pinnable === 'true') {
       reactr.message.unpin();
-    } else {
-      reactr.message.channel.send(
-        'メッセージをピン留めする権限を持っていません。サーバ管理者に依頼して`メッセージの管理`権限を付与してください。'
-      );
     }
   }
 });
