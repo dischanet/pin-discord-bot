@@ -17,16 +17,25 @@ client.on('message', msg => {
 
 client.on('messageReactionAdd', reacta => {
   if (reacta.emoji.name === 'pushpin') {
-    reacta.message.pin();
+    if (reacta.message.pinnable === 'true') {
+      reacta.message.pin();
+    } else {
+      reacta.message.channel.send(
+        'メッセージをピン留めする権限を持っていません。サーバ管理者に依頼して`メッセージの管理`権限を付与してください。'
+      );
+    }
   }
 });
 
 client.on('messageReactionRemove', reactr => {
   if (reactr.emoji.name === 'pushpin') {
-    reactr.message.unpin();
-  }
-  if (msg.content === 'pininfo') {
-    msg.reply('ピン留めくん - ピン留めBOT made by Dischanet Team');
+    if (reacta.message.pinnable === 'true') {
+      reactr.message.unpin();
+    } else {
+      reactr.message.channel.send(
+        'メッセージをピン留めする権限を持っていません。サーバ管理者に依頼して`メッセージの管理`権限を付与してください。'
+      );
+    }
   }
 });
 
