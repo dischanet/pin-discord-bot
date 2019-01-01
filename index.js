@@ -17,7 +17,7 @@ client.on('message', msg => {
 
 client.on('messageReactionAdd', reacta => {
   if (reacta.emoji.name === 'pushpin') {
-    if (reacta.message.pinnable === 'true') {
+    if (reacta.message.pinnable) {
       reacta.message.pin();
     } else {
       reacta.message.channel.send(
@@ -29,7 +29,7 @@ client.on('messageReactionAdd', reacta => {
 
 client.on('messageReactionRemove', reactr => {
   if (reactr.emoji.name === 'pushpin') {
-    if (reacta.message.pinnable === 'true') {
+    if (reacta.message.pinnable) {
       reactr.message.unpin();
     }
   }
