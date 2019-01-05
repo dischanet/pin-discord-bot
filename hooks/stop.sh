@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo /usr/bin/systemctl stop pin-discord-bot
+/usr/bin/systemctl stop pin-discord-bot
