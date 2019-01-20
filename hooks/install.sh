@@ -2,7 +2,7 @@
 
 cd /home/ec2-user/repos/pin-discord-bot
 
-usr/bin/npm install
+usr/bin/npm install --production
 
 REGION=$(curl -s 169.254.169.254/latest/meta-data/local-hostname | cut -d '.' -f2)
 PARAMETER_NAME=PIN_DISCORD_BOT_SECRET
