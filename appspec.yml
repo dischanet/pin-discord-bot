@@ -10,10 +10,6 @@ permissions:
     mode: 777
     pattern: "**"
 hooks:
-  ApplicationStop:
-    - location: hooks/stop.sh
-      timeout: 300
-      runas: root
   AfterInstall:
     - location: hooks/install.sh
       timeout: 300

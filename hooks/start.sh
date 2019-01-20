@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/usr/bin/systemctl start pin-discord-bot
+/usr/bin/systemctl restart pin-discord-bot
